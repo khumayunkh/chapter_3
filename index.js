@@ -29,24 +29,58 @@
 
 // Symbols
 
-let x = Symbol("Humoyun")
-let y = Symbol("Humoyun")
-console.log(x === y) //false
+// let x = Symbol("Humoyun")
+// let y = Symbol("Humoyun")
+// console.log(x === y) //false
 
-let a = Symbol.for("Humoyun")
-let b = Symbol.for("Humoyun")
-console.log(a) //Symbol("Humoyun")
-let c = Symbol.keyFor(b)
-console.log(c) //Humoyun
+// let a = Symbol.for("Humoyun")
+// let b = Symbol.for("Humoyun")
+// console.log(a) //Symbol("Humoyun")
+// let c = Symbol.keyFor(b)
+// console.log(c) //Humoyun
 
-console.log(a === b)  //true
+// console.log(a === b)  //true
 
 
-let person = {
-    mane : "Humoyun",
-    [Symbol.for('password')] :  'HUMOHUMO',
-    [Symbol.for('age')] :  19
+// let person = {
+//     mane : "Humoyun",
+//     [Symbol.for('password')] :  'HUMOHUMO',
+//     [Symbol.for('age')] :  19
+// }
+
+// console.log(person[Symbol.for('password')]) //HUMOHUMO
+// console.log(Object.getOwnPropertySymbols(person))
+
+
+// let s = "hello"
+// console.log(s.toUpperCase()) // HELLO
+// console.log(s) //hello 
+
+// let o = {x:1} 
+// let d = { x : 1} 
+// console.log(o === d) //false
+
+// a = [1]
+// // b = [1]
+// // console.log(a === b) //false
+
+// let b = a
+// b[1] = 2
+// console.log(a[1]) //2
+// console.log(a === b) //true
+
+let a = [1, 2, 3]
+let b = []
+function array(a,b){
+    for(i = 0; i<a.length; i++){
+        b[i] = a[i]
+    }
+    console.log(a === b) //false
+    return console.log(b) // [1, 2, 3]
 }
 
-console.log(person[Symbol.for('password')]) //HUMOHUMO
-console.log(Object.getOwnPropertySymbols(person))
+array(a,b)
+
+console.log('7' * '4')  //28
+
+
