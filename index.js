@@ -96,9 +96,31 @@
 // x = 5
 // console.log(x) // x = 5
 
-const x = 1
-if(x === 1){  
-    let x = 2 /// const x !== let x
-    console.log(x) // 2
-}
-console.log(x) // 1
+//const x = 1
+// if(x === 1){  
+//     let x = 2 /// const x !== let x
+//     console.log(x) // 2
+// }
+// console.log(x) // 1
+
+
+// let i = 32
+// i = 'hello' // it is not error
+// console.log(i)
+
+
+// var r = 5
+// function clobal(){
+//     r = 7
+//     console.log(r) // 7
+// }
+// console.log(r) // 5
+// clobal(r)
+
+// let [x, y] = [4, 5] // equel let x = 4; let y = 5
+console.log(x) // x = 4
+[x,y] = [3] // x = 3; y = undefined
+// let [, x, , y] = [1,2,3,4] // x = 2; y = 4
+let [x, ...y] = [1,2,3,4] // x = 1; y = [2, 3, 4]
+
+let [a, [b, c]] = [1, [2, 4], 6] // a = 1; b = 2; c = 4 
