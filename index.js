@@ -51,7 +51,9 @@
 // console.log(person[Symbol.for('password')]) //HUMOHUMO
 // console.log(Object.getOwnPropertySymbols(person))
 
-
+// let a = Symbol.for('Humoyun')
+// let b = Symbol.keyFor(a)
+// console.log(b)
 // let s = "hello"
 // console.log(s.toUpperCase()) // HELLO
 // console.log(s) //hello 
@@ -69,18 +71,34 @@
 // console.log(a[1]) //2
 // console.log(a === b) //true
 
-let a = [1, 2, 3]
-let b = []
-function array(a,b){
-    for(i = 0; i<a.length; i++){
-        b[i] = a[i]
-    }
-    console.log(a === b) //false
-    return console.log(b) // [1, 2, 3]
+// let a = [1, 2, 3]
+// let b = []
+// function array(a,b){
+//     for(i = 0; i<a.length; i++){
+//         b[i] = a[i]
+//     }
+//     console.log(a === b) //false
+//     return console.log(b) // [1, 2, 3]
+// }
+
+// array(a,b)
+
+// console.log('7' * '4')  //28
+
+// let a = 13
+// console.log(a.toString())
+
+// const x // error
+// let x //undefined but not error
+
+// let x = 3, y = x * x
+// console.log(y) // y = 9; x = 3
+// x = 5
+// console.log(x) // x = 5
+
+const x = 1
+if(x === 1){  
+    let x = 2 /// const x !== let x
+    console.log(x) // 2
 }
-
-array(a,b)
-
-console.log('7' * '4')  //28
-
-
+console.log(x) // 1
