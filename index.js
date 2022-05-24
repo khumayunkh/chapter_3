@@ -118,9 +118,20 @@
 // clobal(r)
 
 // let [x, y] = [4, 5] // equel let x = 4; let y = 5
-console.log(x) // x = 4
-[x,y] = [3] // x = 3; y = undefined
-// let [, x, , y] = [1,2,3,4] // x = 2; y = 4
-let [x, ...y] = [1,2,3,4] // x = 1; y = [2, 3, 4]
+// console.log(x) // x = 4
+// [x,y] = [3] // x = 3; y = undefined
+// // let [, x, , y] = [1,2,3,4] // x = 2; y = 4
+// let [x, ...y] = [1,2,3,4] // x = 1; y = [2, 3, 4]
 
-let [a, [b, c]] = [1, [2, 4], 6] // a = 1; b = 2; c = 4 
+// let [a, [b, c]] = [1, [2, 4], 6] // a = 1; b = 2; c = 4 
+
+// // const sin = Math.sin
+// // const cos = Math.cos 
+// // const tan = Math.tan
+// //======================
+// const {sin, cos, tan} =Math
+
+let pointer = [{x : 1, y : 2 }, {x : 3 , y : 4}]
+[{x : x1, y : y1}, {x : x2, y : y2}]
+(x1 == 1 && y == 2 && x == 3 && y == 4) //true
+
