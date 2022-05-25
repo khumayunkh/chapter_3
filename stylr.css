@@ -1,0 +1,143 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.header{
+    background-image: linear-gradient(144deg,#ffd57a, #eb816c 50%,#c33bd4);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.header_in{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 1%;
+    align-items: center;
+}
+
+.header_in img{
+    width: 10%;
+    height: 10%;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+.menu a{
+    color: white;
+    font-weight: 900;
+}
+
+.btn_menu{
+    width: 20%;
+    height: 30px;
+    border: 2px white solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.body{
+    background-image: linear-gradient(144deg,#ffd57a, #eb816c 50%,#c33bd4);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-top: 1px rgb(16, 32, 54) solid;
+}
+
+.body_in{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.body_in a{
+    font-weight: 900;
+}
+
+.btn_body{
+    width: 10%;
+    height: 35px;
+    border: 3px white solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+.body_in input{
+    padding-left: 2%;
+    width: 35%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.body_in_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.contants_in{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+}
+.contant{
+    height: 70%;
+    justify-content: center;
+    border-radius: 20px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: box-shadow 0.5s;
+}
+.contant:hover{
+    box-shadow: 0px 0px 60px rgb(111, 110, 110); 
+}
+.contant h4{
+    font-weight: 500;
+}
+
+.slide_in{
+    width: 90%;
+    margin: 0 auto;
+}
+.slide_in img{
+    margin-left: 4%;
+    border-radius: 25px;
+}
+
+.texnicts_in{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 2%;
+    margin-top: 5%;
+}
+
+.texnicts_in img{
+    border-radius: 15px;
+    transition: box-shadow 0.5s;
+}
+
+.texnicts_in img:hover{
+    box-shadow: 0px 0px 60px rgb(111, 110, 110);  
+}

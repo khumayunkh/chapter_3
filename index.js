@@ -42,11 +42,26 @@
 // console.log(a === b)  //true
 
 
-// let person = {
-//     mane : "Humoyun",
-//     [Symbol.for('password')] :  'HUMOHUMO',
-//     [Symbol.for('age')] :  19
-// }
+let person = {
+    name : "Humoyun",
+    age : 18,
+    [Symbol.for('password')] :  'HUMOHUMO',
+    [Symbol.for('age')]: 19
+}
+
+console.log(person.name.toUpperCase())
+person[Symbol.for('age')]= person[Symbol.for('age')] % 4
+console.log(person[Symbol.for("age")]) //3 
+
+function symbol(person){
+    if(person[Symbol.for("age")] || person[Symbol.for('age')] === 18){
+        person.name = 'HUMOYUN'
+        console.log(person.name)
+    }else{
+        console.log('some error')
+    }
+}
+symbol(person)
 
 // console.log(person[Symbol.for('password')]) //HUMOHUMO
 // console.log(Object.getOwnPropertySymbols(person))
@@ -129,9 +144,20 @@
 // // const cos = Math.cos 
 // // const tan = Math.tan
 // //======================
-// const {sin, cos, tan} =Math
+// // const {sin, cos, tan} =Math
 
 let pointer = [{x : 1, y : 2 }, {x : 3 , y : 4}]
-[{x : x1, y : y1}, {x : x2, y : y2}]
-(x1 == 1 && y == 2 && x == 3 && y == 4) //true
+let [{x : x1, y : y1}, {x : x2, y : y2}] = pointer
+console.log((x1 == 1 && y1 == 2 && x2 == 3 && y2 == 4)) //true
+console.log(pointer[1].x) //3
+
+// let points = {
+//     p1: [1,2], 
+//     y : [3,4]
+// }
+// // let {x : [x1 , x2], y : [y1, y2]} = points
+// // console.log((x1 == 1 && x2 == 2 && y1 == 3 && y2 == 4)) //true
+
+// let x1 = points.p1[0]
+// console.log(x1) // 1
 
