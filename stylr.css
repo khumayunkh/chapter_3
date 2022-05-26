@@ -172,3 +172,61 @@
 .popular:hover{
     box-shadow: 0px 0px 60px rgb(111, 110, 110);  
 }
+
+.btn_popular{
+    margin-bottom: 6%;
+    box-shadow: 0px 0px 50px rgb(111, 110, 110); 
+    width: 50%;
+    height: 35px;
+    border: 3px rgb(78, 77, 77);;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+
+.news_in{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.new{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 2%;
+    align-items: center;
+}
+.new_in img{
+    margin-top: 5%;
+    width:50%
+}
+.new_in h3{
+    margin-top: 25%;
+}
+
+.new_in{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 20px;
+    transition: box-shadow 0.5s;
+    
+}
+
+.sale{
+    border: 1px red solid;
+    width: 60%;
+    margin-left: -3%;
+    padding-left: 3%;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+.new_in:hover{
+    box-shadow: 0px 0px 60px rgb(111, 110, 110);  
+}

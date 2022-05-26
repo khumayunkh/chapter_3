@@ -52,16 +52,31 @@ let person = {
 console.log(person.name.toUpperCase())
 person[Symbol.for('age')]= person[Symbol.for('age')] % 4
 console.log(person[Symbol.for("age")]) //3 
+console.log(person[Symbol.for("password")])
+
+if(person[Symbol.for('age')]){
+    person[Symbol.for('age')] = person[Symbol.for('age')] + 2
+    console.log(person[Symbol.for('age')] + ' jjjjjjjj') // 5
+}
+
+console.log(person[Symbol.for('password')])
 
 function symbol(person){
-    if(person[Symbol.for("age")] || person[Symbol.for('age')] === 18){
+    if(person[Symbol.for("afe")] ?? person[Symbol.for('age')] === 3){
         person.name = 'HUMOYUN'
-        console.log(person.name)
+        console.log(person.name) 
     }else{
         console.log('some error')
     }
 }
+
 symbol(person)
+
+
+for(x in person){
+    console.log(x)  //name, age
+}
+
 
 // console.log(person[Symbol.for('password')]) //HUMOHUMO
 // console.log(Object.getOwnPropertySymbols(person))
@@ -111,7 +126,7 @@ symbol(person)
 // x = 5
 // console.log(x) // x = 5
 
-//const x = 1
+// const x = 1
 // if(x === 1){  
 //     let x = 2 /// const x !== let x
 //     console.log(x) // 2
@@ -157,6 +172,21 @@ console.log(pointer[1].x) //3
 // }
 // // let {x : [x1 , x2], y : [y1, y2]} = points
 // // console.log((x1 == 1 && x2 == 2 && y1 == 3 && y2 == 4)) //true
+
+let p = 4
+switch(p){
+    case 4:{
+        console.log('right')
+        break
+    }
+    case 3:{
+        console.log('error')
+        break
+    }
+    default:{
+        break
+    }
+}
 
 // let x1 = points.p1[0]
 // console.log(x1) // 1
