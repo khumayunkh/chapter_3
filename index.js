@@ -9,7 +9,16 @@
 
 // y = 'test'.padEnd(3) //добавляет пробелы справа до длины 3
 
-// let x = [1, 2, 3, 4, 5]
+let x = [1, 2, 3, 4, 5]
+
+x.push(6)
+x.unshift(7)
+console.log(x)
+let f = 1
+for(r of x){
+    f *=r
+}
+console.log(f)
 // let y = [6, 7, 8, 9]
 
 // console.log(x.concat(y)) // add "y" to "x"
@@ -187,6 +196,22 @@ switch(p){
         break
     }
 }
+let sm = 0 
+if(p<6){
+    for(let i=0; i<=p; i++){
+        if(i === 4){
+            continue
+        } 
+        sm += i
+    }
+}
+
+
+
+
+
+
+console.log(`${sm} = sm`)
 
 // let x1 = points.p1[0]
 // console.log(x1) // 1
